@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
  <head>
      <meta charset="UTF-8">
@@ -6,156 +6,189 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Billie Eilish</title>
      <link rel="stylesheet" href="../css/style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
  </head>
  <body>
       <header>
-        <nav id="navbar">  
-            <a href="../index.html">
-                 <img src="../assets/img/logo.png" alt="logo" class="navbar__img">
-            </a>
-            <ul class="navbar__list">
-                 <li><a href="../index.html">Home</a></li>
-                 <li><a href="./music.html">Music</a></li>
-                 <li><a href="./tour.html">Tour</a></li>
-                 <li><a href="./videos.html">Videos</a></li>
-                 <li><a href="./sign.html">Sign up</a></li>
-            </ul>  
-           <a class="menu_item" href="">
-              <img src="../assets/icons/menu.svg" alt="menu">
-           </a>
-      </nav>                            
+          <!--Menú de la página-->
+          <nav class="navbar navbar-expand-lg fixed-top" id="nav-bar">
+             <div class="container-fluid">
+                 <a class="navbar-brand" href="../index.html">
+                     <img src="../assets/img/logo.png" alt="" width="auto" height="55px" class="navbar__img">
+                 </a>
+                 <button class="navbar-toggler"   type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                     <div class="navbar-nav">
+                         <ul class="nav">
+                             <li class="nav-item">
+                                 <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                             </li>
+                             <li class="nav-item">
+                                  <a class="nav-link" href="music.html">Music</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="tour.html">Tour</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="videos.html">Videos</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="sign.html">Sign up</a> 
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+              </div>
+          </nav>                            
      </header>
      <main>
-        TOUR SECTION
+         <!--TOUR SECTION-->
          <section class="tour__section--container">
              <div class="tour__title--container">
                  <h1 class="title">Tour</h1>   
              </div>
              <figure class="tour__img--container">
-                     <img class="tour__img" src="../assets/img/tour-title.png" alt="">
-            </figure>
-             <section class="tour__dates--container">
-                 <article class="tour__date">
-                     <div class="date">
-                         <div class="date__container">
-                             <span class="month">Jun</span>
-                         <span class="day">3</span>
-                         </div>
+                 <img class="tour__img" src="../assets/img/tour-title.png" alt="">
+             </figure>
+             <div class="container-fluid">
+                 <section class="tour__dates--container">
+                     <div class="row justify-content-md-center">
+                         <article class="tour__date">
+                             <div class="date col-sm-12 text-center">
+                                 <div class="date__container">
+                                     <span class="month">Jun</span>
+                                     <span class="day">3</span>
+                                 </div>
+                                 </div>
+                                     <div class="place__container col-sm-12 text-center">
+                                         <h3 class="place__title">SSE Arena</h3>
+                                         <p class="country">Belfast, United Kingdom</p>
+                                     </div>
+                                      <div class="tickets__container col-sm-12 text-center">
+                                         <span class="sold__out">sold out</span>
+                                     </div>
+                         </article>
                      </div>
-                      <div class="place__container">
-                         <h3 class="place__title">SSE Arena</h3>
-                         <p class="country">Belfast, United Kingdom</p>
+                     <div class="row justify-content-md-center">
+                         <article class="tour__date">
+                             <div class="date col-sm-12 text-center">
+                                 <div class="date__container">
+                                     <span class="month">Jun</span>
+                                     <span class="day">3</span>
+                                 </div>
+                             </div>
+                             <div class="place__container col-sm-12 text-center">
+                                 <h3 class="place__title">SSE Arena</h3>
+                                 <p class="country">Belfast, United Kingdom</p>
+                             </div>
+                             <div class="tickets__container col-sm-12 text-center">
+                                 <span class="sold__out">sold out</span>
+                             </div>
+                         </article>
                      </div>
-                     <div class="tickets__container">
-                         <span class="sold__out">sold out</span>
+                     <div class="row justify-content-md-center">
+                         <article class="tour__date">
+                             <div class="date col-sm-12 text-center">
+                                 <div class="date__container">
+                                     <span class="month">Jun</span>
+                                     <span class="day">3</span>
+                                 </div>
+                             </div>
+                             <div class="place__container col-sm-12 text-center">
+                                 <h3 class="place__title">SSE Arena</h3>
+                                 <p class="country">Belfast, United Kingdom</p>
+                             </div>
+                             <div class="tickets__container col-sm-12 text-center">
+                                 <span class="sold__out">sold out</span>
+                             </div>
+                         </article>
                      </div>
-                 </article>
-                 <article class="tour__date">
-                     <div class="date">
-                         <div class="date__container">
-                             <span class="month">Jun</span>
-                             <span class="day">3</span>
-                          </div>
-                      </div>
-                     <div class="place__container">
-                        <h3 class="place__title">SSE Arena</h3>
-                        <p class="country">Belfast, United Kingdom</p>
-                    </div>
-                    <div class="tickets__container">
-                        <span class="sold__out">sold out</span>
-                    </div>
-                </article>
-                <article class="tour__date">
-                    <div class="date">
-                        <div class="date__container">
-                            <span class="month">Jun</span>
-                            <span class="day">3</span>
-                         </div>
+                     <div class="row justify-content-md-center">
+                         <article class="tour__date">
+                             <div class="date col-sm-12 text-center">
+                                 <div class="date__container">
+                                     <span class="month">Jun</span>
+                                     <span class="day">3</span>
+                                 </div>
+                             </div>
+                             <div class="place__container col-sm-12 text-center">
+                                 <h3 class="place__title">SSE Arena</h3>
+                                 <p class="country">Belfast, United Kingdom</p>
+                             </div>
+                             <div class="tickets__container col-sm-12 text-center">
+                                 <span class="sold__out">sold out</span>
+                             </div>
+                         </article>
                      </div>
-                     <div class="place__container">
-                        <h3 class="place__title">SSE Arena</h3>
-                        <p class="country">Belfast, United Kingdom</p>
-                    </div>
-                    <div class="tickets__container">
-                        <span class="sold__out">sold out</span>
-                    </div>
-                </article>
-                <article class="tour__date">
-                    <div class="date">
-                        <div class="date__container">
-                            <span class="month">Jun</span>
-                            <span class="day">3</span>
-                         </div>
+                     <div class="row justify-content-md-center">
+                         <article class="tour__date">
+                             <div class="date col-sm-12 text-center">
+                                 <div class="date__container">
+                                     <span class="month">Jun</span>
+                                     <span class="day">3</span>
+                                 </div>
+                             </div>
+                             <div class="place__container col-sm-12 text-center">
+                                 <h3 class="place__title">SSE Arena</h3>
+                                 <p class="country">Belfast, United Kingdom</p>
+                             </div>
+                             <div class="tickets__container col-sm-12 text-center">
+                                 <span class="sold__out">sold out</span>
+                             </div>
+                         </article>
                      </div>
-                     <div class="place__container">
-                        <h3 class="place__title">SSE Arena</h3>
-                        <p class="country">Belfast, United Kingdom</p>
-                    </div>
-                    <div class="tickets__container">
-                        <span class="sold__out">sold out</span>
-                    </div>
-                </article>
-                <article class="tour__date">
-                    <div class="date">
-                        <div class="date__container">
-                            <span class="month">Jun</span>
-                            <span class="day">3</span>
-                         </div>
+                     <div class="row justify-content-md-center">
+                         <article class="tour__date">
+                             <div class="date col-sm-12 text-center">
+                                 <div class="date__container">
+                                     <span class="month">Jun</span>
+                                     <span class="day">3</span>
+                                 </div>
+                             </div>
+                             <div class="place__container col-sm-12 text-center">
+                                 <h3 class="place__title">SSE Arena</h3>
+                                 <p class="country">Belfast, United Kingdom</p>
+                             </div>
+                             <div class="tickets__container col-sm-12 text-center">
+                                 <span class="sold__out">sold out</span>
+                             </div>
+                         </article>
                      </div>
-                     <div class="place__container">
-                        <h3 class="place__title">SSE Arena</h3>
-                        <p class="country">Belfast, United Kingdom</p>
-                    </div>
-                    <div class="tickets__container">
-                        <span class="sold__out">sold out</span>
-                    </div>
-                </article>
-                <article class="tour__date">
-                    <div class="date">
-                        <div class="date__container">
-                            <span class="month">Jun</span>
-                            <span class="day">3</span>
-                         </div>
-                     </div>
-                     <div class="place__container">
-                        <h3 class="place__title">SSE Arena</h3>
-                        <p class="country">Belfast, United Kingdom</p>
-                    </div>
-                    <div class="tickets__container">
-                        <span class="sold__out">sold out</span>
-                    </div>
-                </article>
-                <article class="tour__date">
-                    <div class="date">
-                        <div class="date__container">
-                            <span class="month">Jun</span>
-                            <span class="day">3</span>
-                         </div>
-                     </div>
-                     <div class="place__container">
-                        <h3 class="place__title">SSE Arena</h3>
-                        <p class="country">Belfast, United Kingdom</p>
-                    </div>
-                    <div class="tickets__container">
-                        <span class="sold__out">sold out</span>
-                    </div>
-                </article>
-                
-             </section>
-         </section>
+                     <div class="row justify-content-md-center">
+                         <article class="tour__date">
+                             <div class="date col-sm-12 text-center">
+                                 <div class="date__container">
+                                     <span class="month">Jun</span>
+                                     <span class="day">3</span>
+                                 </div>
+                             </div>
+                             <div class="place__container col-sm-12  text-center">
+                                 <h3 class="place__title">SSE Arena</h3>
+                                 <p class="country">Belfast, United Kingdom</p>
+                             </div>
+                             <div class="tickets__container col-sm-12 text-center">
+                                 <span class="sold__out">sold out</span>
+                             </div>
+                         </article>
+                     </div> 
+                 </section>         
+              </div>         
+         </section>      
      </main>
      <aside>
 
-     </aside>-->
-     <!--Pie de página
+     </aside>
+     <!--Pie de página-->
      <footer>
-        <section class="footer__left">
-            <p class="first__text">Página sin fines de lucro</p>
-            <p class="second__text">Copyright &copy; Abril Cortés</p>
-        </section>-->
-        <!--Redes sociales
-        <section class="footer__right">
-            <div class="footer__social--container">
+         <section class="footer__left">
+             <p class="first__text">Página sin fines de lucro</p>
+             <p class="second__text">Copyright &copy; Abril Cortés</p>
+         </section>
+         <!--Redes sociales-->
+         <section class="footer__right">
+             <div class="footer__social--container">
                    <a href="https://www.instagram.com/billieeilish" target="_blank">
                        <img src="../assets/icons/instagram.svg" alt="" class="footer__img">
                    </a>
@@ -168,8 +201,9 @@
                    <a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH?si=g8c5TvWQR2eohAM8zz-JuA" target="_blank"> 
                         <img src="../assets/icons/spotify.svg" alt=""  class="footer__img">
                    </a>
-            </div>
-        </section>
-    </footer>
+             </div>
+         </section>
+     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
  </body>
-</html>-->
+</html>

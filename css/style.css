@@ -6,8 +6,6 @@
     box-sizing: border-box;
 }
 
-/*comente el codigo anterior porque sino se me rompia todo, solo estan descomentadas las dos paginas a la que le aplique bts*/
-
 /*ESTILOS GENERALES*/
 html {
     font-size: 62,5%;
@@ -19,6 +17,8 @@ html {
     width: 100%;
 }
 body {
+    height: 100vh;
+    width: 100%;
     font-family: 'PT Serif', serif;
     display: grid;
     grid-template-columns: auto;
@@ -44,12 +44,12 @@ header {
 
 /*NAV*/
 .nav-item a {
+    font-family: 'PT Serif', serif;
     font-size: 17px;
     margin-top: 10px;
     margin-right: 20px;
     color: #e1d3bb;
     transition: all 1s;
-    font-family: 'PT Serif', serif;
 }
 .nav-item a:hover {
     transform: scale(1.2, 1.3);
@@ -93,6 +93,7 @@ header {
     background-color: #674f3b;
     color: #e1d3bb;
     font-size: 15px; 
+    font-family: 'PT Serif', serif;
     font-weight: 500;
     border-radius: 8px;
     border: #e1d3bb;
@@ -118,23 +119,14 @@ header {
     padding: 2px; 
 }
 /*MUSIC*/
-/*.main--discography-container {
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-.discography-section {
-    width: 100%;
-    height: auto;
-    /*margin-top: 100px;
- }*/
- .main--discography-container, .tour__section--container {
-     margin-top: 30px;
+
+.main--discography-container, .tour__section--container, .title__videos--container {
+     margin-top: 100px;
  }
-.title-dicography-container, .tour__title--container  {
+.title-dicography-container, .tour__title--container, .title__videos--container, .form_title--container {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .card_row {
     margin: 20px;
@@ -182,15 +174,275 @@ figure p {
 }
 
 /*TOUR*/
+.tour__section--container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
 .tour__img--container {
     display: flex;
     justify-content: center;
 }
 .tour__img {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 80px;
 }
+.place__container {
+    margin-top: 20px;
+}
+.place__title {
+    color: #e1d3bb;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.country {
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+}
+.tickets__container {
+    margin-bottom: 30px;
+}
+.sold__out {
+    color: rgb(205, 16, 16);
+    font-style: italic;
+    text-decoration: line-through;
+}
+/*VIDEOS*/
+.main--videos-section {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    text-align: center;
+    /*margin-top: 50px;*/
+}
+.title__performance {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+.video_title {
+    color: #e1d3bb;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: 'Tangerine', cursive;
+}
+.main--videos-container .general-btn {
+    justify-self: center;
+    margin: 40px 0;
+}
+.videos__section a {
+    color: #e1d3bb;
+    text-decoration: none;
+    transition: all 1s;
+}
+.videos__section a:hover {
+    transform: scale(1.1, 1.1);
+}
+.videos__section a p {
+    margin-top: 10px;
+}
+.videos__section a:visited {
+    color: #e1d3bb;
+} 
+.videos__section iframe{
+    transition: all 1s;
+}
+.videos__section iframe:hover {
+    transform: scale(1.1, 1.1);
+}
+.fotos_container {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+/*SIGN UP*/
+
+.main--form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.main--form {
+    background-color: #fff;
+    width: 90%;
+    height: auto;
+}
+.form_title--container {
+    margin-top: 30px;
+}
+.form_title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #8D6E51;
+    letter-spacing: 1rem;
+    text-indent: 0.8rem;
+    font-weight: 900;
+    line-height: 1;
+    padding: 2px; 
+    font-style: italic;
+    font-family: 'PT Serif', serif;
+}
+.campos {
+    border: 0;
+    color: #e1d3bb;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 250px;
+    margin-top: 15px;
+    text-align: left;
+}
+.input_item {
+    border: 0;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 2px;
+    width: 250px;
+    display: block;
+    margin-top: 15px;
+}
+input {
+    margin-top: 15px;
+}
+::placeholder {
+    color: rgb(175, 175, 175);
+}
+select {
+    display: block;
+    margin-top: 15px;
+    border: 0;
+    color: #e1d3bb;
+    appearance: none; 
+    font-style: italic;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    width: 250px;
+}
+span {
+    color: red;
+    display: inline-block;
+}
+.form_item, .form_item--pais{
+    display: grid;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+.select-country {
+    margin-top: 30px;
+}
+.form_item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    height: 2px;
+    background-color: #e1d3bb;
+}
+.form_item--pais .form-select {
+    background-color: #e1d3bb;
+    color: #674f3b;
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'PT Serif', serif;
+    box-shadow: 5px 3px 4px #674f3b;
+    height: 40px;
+}
+.form_item--noticias {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    text-align: center;
+    justify-items: center;
+}
+.noticias {
+    color: #e1d3bb;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    text-align: center;
+}
+.span_billie {
+    color: #af976d;
+    font-weight: 700;
+}
+.comment p {
+    color: #e1d3bb;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    text-align: center;
+}
+.comentarios textarea {
+    margin-top: 10px;
+    height: auto;
+    border: 0;
+    background-color: #e1d3bb;
+    margin-left: 10px;
+}
+.comentarios label {
+    color: #674f3b;
+    font-style: italic;
+    font-family: 'PT Serif', serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.btn_form {
+    width: 100px;
+    height: 30px;
+    background-color: #674f3b;
+    color: #e1d3bb;
+    font-size: 12px; 
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: #e1d3bb;
+    box-shadow: 5px 3px 4px #674f3b;
+    margin: 10px;
+}
+.btn_form:hover {
+    color: #674f3b;
+    background-color: #e1d3bb;
+    font-weight: 600;
+}
+
 /*FOOTER*/
+
 footer {
     grid-area: footer;
     margin-top: auto;
@@ -226,272 +478,8 @@ footer section {
     transform: scale(1.2, 1.3);
 }
 
-/*TOUR SECTION*/
-.tour__section--container {
-    display: grid;
-    grid-template-columns: auto;
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-}
-.tour__title--container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-.title {
-    font-size: 24px;
-    width: auto;
-    color: #8D6E51;
-    background-color: #e1d3bb;
-    letter-spacing: 1rem;
-    text-indent: 0.8rem;
-    font-weight: 900;
-    line-height: 1;
-    height: 27px;
-    padding: 2px; 
-}
-.tour__img--container {
-    display: flex;
-    justify-content: center;
-}
-.tour__img {
-    height: 90px;
-    width: auto;
-    margin-top: 40px;
-    margin-bottom: 80px;
-}
-.tour__dates--container {
-   width: 100%;
-   height: auto;
-   display: grid;
-   grid-template-columns: auto;
-   grid-template-rows: repeat(7, auto);
-   gap: 50px;
-}
-.place__title {
-    color: #e1d3bb;
-    font-size: 28px;
-    font-style: italic;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-.country {
-    color: #fff;
-    font-size: 18px;
-    font-style: italic;
-    letter-spacing: 0.1rem;
-}
-.tickets__container {
-    grid-area: tickets;
-    justify-self: start;
-}
-.sold__out {
-    color: rgb(205, 16, 16);
-    font-style: italic;
-    text-decoration: line-through;
-}
 
- /*VIDEOS*/
-
-.main--videos-section {
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-    text-align: center;
-    margin-top: 50px;
-}
-.title__videos--container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-.main--videos-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(6, auto);
-    margin: 70px;
-}
-.title__performance {
-    display: flex;
-    justify-content: center;
-    padding: 30px 0;
-    margin-top: 30px;
-}
-.video_title {
-    color: #e1d3bb;
-    font-size: 3rem;
-    font-style: italic;
-    font-weight: 700;
-    margin-bottom: 5px;
-    font-family: 'Tangerine', cursive;
-}
-.main--videos-container .btn {
-    justify-self: center;
-    margin: 40px 0;
-}
-
-/*SIGN UP*/
-
-.main--form-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-.main--form {
-    background-color: #fff;
-    width: 90%;
-    height: auto;
-    justify-items: center;
-}
-.form_title--container {
-    display: flex;
-    justify-content: center;
-}
-.form_title {
-    margin-top: 60px;
-    margin-bottom: 10px;
-    font-size: 24px;
-    color: #8D6E51;
-    letter-spacing: 1rem;
-    text-indent: 0.8rem;
-    font-weight: 900;
-    line-height: 1;
-    padding: 2px; 
-    font-style: italic;
-}
-fieldset {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-items: center;
-    border: 0;
-}
-.form_item {
-    /*margin-right: 10px;*/
-    text-align: left;
-    margin-top: 20px;
-    width: 100%;
-}
-.form_item::after {
-    content: "";
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    height: 2px;
-    background-color: #e1d3bb;
-}
-.nombre {
-    /*margin-left: 70px;*/
-    justify-self: end;
-}
-.email {
-    /*margin-left: 50px;*/
-    justify-self: end;
-}
-.apellido {
-    /*margin-left: 50px;*/
-    justify-self: end;
-}
-.pais {
-    /*margin-left: 50px;*/
-    justify-self: end;
-    width: 100%;
-}
-.campos {
-    display: block;
-    color: #e1d3bb;
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 4px;
-}
-.input_item {
-    border: 0;
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 12px;
-    letter-spacing: 2px;
-    width: 250px;
-    display: block;
-    margin-top: 15px;
-}
-input {
-    margin-top: 15px;
-}
-::placeholder {
-    color: rgb(175, 175, 175);
-}
-select {
-    display: block;
-    margin-top: 15px;
-    border: 0;
-    color: rgb(175, 175, 175);
-    appearance: none; 
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 12px;
-    letter-spacing: 2px;
-    width: 250px;
-}
-span {
-    color: red;
-    display: inline-block;
-}
-.form_item--noticias {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    margin-top: 40px;
-}
-.span_billie {
-    color: #af976d;
-    font-weight: 700;
-}
-.comentarios {
-    margin-top: 25px;
-}
-textarea {
-    margin-top: 10px;
-    width: 40%;
-    height: auto;
-    border: 0;
-    background-color: #af976d;
-}
-.button {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin: 15px;
-}
-.btn_form {
-    width: 100px;
-    height: 30px;
-    background-color: #e1d3bb;
-    color: #674f3b;
-    font-size: 12px; 
-    font-weight: 600;
-    font-style: italic;
-    text-transform: uppercase;
-    border-radius: 8px;
-    border: #e1d3bb;
-    box-shadow: 5px 3px 4px #674f3b;
-    margin: 10px;
-}
-.btn_form:hover {
-    color: #e1d3bb;
-    background-color: #674f3b;
-    font-weight: 600;
-}
-
-/* Media Queries Bootstrap */
+/* Media Queries Bootstrap*/
 
 @media (min-width: 320px) {
     #body, body {
@@ -503,12 +491,62 @@ textarea {
       display: block;
       text-align: center;
     }
+    .main__info--container {
+        margin-top: 50px;
+    }
     /*tour*/
 
     .tour__img {
         height: 60px;
         width: auto;
     }
+    .tour__date {
+        width: 100%;
+        height: auto;
+        font-family: 'PT Serif', serif;
+    }
+    .date {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .date__container {
+        background-color: rgba(211,194,154,.3);
+        width: 70px;
+        height: 70px;
+    }
+    .date__container span {
+        display: flex;
+        justify-content: center;
+        color: #e1d3bb;
+        font-weight: 900;
+        text-align: center;
+        text-transform: none;
+    }
+    .month {
+        padding-top: 10px;
+        font-size: 16px;
+        line-height: 1;
+    }
+    .day {
+        font-size: 25px;
+        line-height: 1;
+        margin-top: 5px;
+    }
+    /*videos*/
+
+    .main--videos-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    /*margin: 70px;*/
+    }
+    .videos__section {
+        margin: 0 20px;
+        height: fit-content;
+    }
+    /*footer*/
+
     footer {
         display: block;
     }
@@ -516,6 +554,8 @@ textarea {
         justify-content: center;
     }
 }
+
+@media (min-width: 465px) {}
 
 @media (min-width: 576px) {}
 
@@ -531,6 +571,7 @@ textarea {
         justify-items: center;
         align-items: center;
         text-align: center;
+        margin-bottom: 20px;
     }
 }
 
@@ -555,6 +596,18 @@ textarea {
     justify-content: center;
     align-items: center;
     align-content: center;
+    }
+    /*videos*/
+    .videos__section {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        row-gap: 40px;
+        column-gap: 60px;
+       justify-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        justify-content: center;
     }
     footer {
         display: flex;
