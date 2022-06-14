@@ -6,24 +6,42 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Billie Eilish</title>
      <link rel="stylesheet" href="../css/style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
  </head>
  <body>
      <header>
-        <nav id="navbar">  
-            <a href="../index.html">
-                 <img src="../assets/img/logo.png" alt="logo" class="navbar__img">
-            </a>
-            <ul class="navbar__list">
-                 <li><a href="../index.html">Home</a></li>
-                 <li><a href="./music.html">Music</a></li>
-                 <li><a href="./tour.html">Tour</a></li>
-                 <li><a href="./videos.html">Videos</a></li>
-                 <li><a href="./sign.html">Sign up</a></li>
-            </ul>  
-           <a class="menu_item" href="">
-              <img src="../assets/icons/menu.svg" alt="menu">
-           </a>
-      </nav>                            
+         <!--Menú de la página-->
+         <nav class="navbar navbar-expand-lg fixed-top" id="nav-bar">
+             <div class="container-fluid">
+                 <a class="navbar-brand" href="../index.html">
+                     <img src="../assets/img/logo.png" alt="" width="auto" height="55px" class="navbar__img">
+                 </a>
+                 <button class="navbar-toggler"   type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                     <div class="navbar-nav">
+                         <ul class="nav">
+                             <li class="nav-item">
+                                 <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="music.html">Music</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="tour.html">Tour</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="videos.html">Videos</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="sign.html">Sign up</a> 
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </nav>                            
      </header>
      <main>
          <!--Formulario-->
@@ -32,50 +50,78 @@
                  <div class="form_title--container">
                      <h2 class="form_title">Subscribe</h2>
                  </div>
-                 
                  <form action="#" method="get" enctype="multipart/form-data">
                      <fieldset>
-                         <div class="form_campos--container">
-                             <div class="form_item nombre">
-                                 <label for="nombre" class="campos nombre" >Nombre <span>*</span> </label>
-                                 <input class="input_item" name="nombre" type="text" placeholder="Nombre" required>
+                         <div class="container-fluid">
+                             <div class="form_campos--container justify-content-center">
+                                 <div class="row">
+                                     <div class="col">
+                                         <div class="form_item nombre col-sm-12 col-md-12  justify-content-center">
+                                             <label for="nombre" class="campos" >Nombre <span>*</span> </label>
+                                             <input class="input_item nombre" name="nombre" type="text" placeholder="Nombre" required>
+                                         </div>
+                                     </div>
+                                     <div class="col">
+                                         <div class="form_item apellido col-sm-12 col-md-12">
+                                             <label for="apellido" class="campos">Apellido <span>*</span> </label>
+                                             <input class="input_item" name="apellido" type="text" placeholder="Apellido" required>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col">
+                                         <div class="form_item email col-sm-12 col-md-12">
+                                             <label for="mail" class="campos">E-mail <span>*</span> </label>
+                                             <input class="input_item" name="mail" type="email"  placeholder="Correo electrónico" required>
+                                         </div>
+                                     </div>
+                                     <div class="col">
+                                         <div class="form_item password col-sm-12 col-md-12">
+                                             <label for="password" class="campos">Password <span>*</span> </label>
+                                             <input class="input_item" name="password" type="password"  placeholder="Password" required>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="select-country">
+                                     <div class="row">
+                                         <div class="col">
+                                             <div class="form_item--pais">
+                                             <select class="form-select" aria-label="Default select example" name="pais" id="pais">
+                                             <option selected>Select your country</option>
+                                             <option value="ar">Argentina</option>
+                                             <option value="ur">Uruguay</option>
+                                             <option value="eu">Estados Unidos</option>
+                                             <option value="col">Colombia</option>
+                                         </select>
+                                     </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col">
+                                         <div class="form_item--noticias">
+                                             <div class="noticias">
+                                                 <label for="noticias" class="noticias">¿Desea recibir novedades sobre Billie?</label>
+                                             </div>
+                                             <div class="col">
+                                             <input name="noticias" type="checkbox">
+                                             <span class="span_billie">BILLIE EILISH</span>
+                                         </div>
+                                         <div class="comment">
+                                             <p>Leave a comment!</p>
+                                             <div class="form-floating comentarios">
+                                                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                                 <label for="floatingTextarea2">Comments</label>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="button">
+                                     <label for="resetear"></label>
+                                     <input class="btn_form" name="resetear" type="reset" value="Resetear" class="btn">
+                                     <label for="enviar"></label>
+                                     <input class="btn_form" name="enviar" type="submit" value="Registrarme" class="btn">
+                                 </div>
                              </div>
-                                 <div class="form_item apellido">
-                                 <label for="apellido" class="campos">Apellido <span>*</span> </label>
-                                 <input class="input_item" name="apellido" type="text" placeholder="Apellido" required>
-                             </div>
-                             <div class="form_item email">
-                                 <label for="mail" class="campos">E-mail <span>*</span> </label>
-                                 <input class="input_item" name="mail" type="email"  placeholder="Correo electrónico" required>
-                             </div>
-                             <div class="form_item pais">
-                                 <label for="pais" class="campos">Pais <span>*</span> </label>
-                                 <select name="pais" id="pais">
-                                 <option value="ar">Argentina</option>
-                                 <option value="ur">Uruguay</option>
-                                 <option value="eu">Estados Unidos</option>
-                                 <option value="col">Colombia</option>
-                             </select>
-                         </div>
-                         </div>
-                         <div class="form_item--noticias">
-                            <div class="noticias">
-                                <label for="noticias" class="campos">¿Desea recibir novedades sobre Billie?</label>
-                                <input name="noticias" type="checkbox">
-                                <span class="span_billie">BILLIE EILISH</span>
-                            </div>
-                            <div class="comentarios">
-                                <label for="comentarios" class="campos noticias">Dejanos tu comentario!</label>
-                                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
-                            </div>
-                        </div>
-                        <div class="button">
-                            <label for="resetear"></label>
-                            <input class="btn_form" name="resetear" type="reset" value="Resetear" class="btn">
-                            <label for="enviar"></label>
-                            <input class="btn_form" name="enviar" type="submit" value="Registrarme" class="btn">
-                        </div>
-                         
+                         </div>  
                      </fieldset>
                  </form>
              </article>
@@ -85,13 +131,13 @@
      </aside>
      <!--Pie de página-->
      <footer>
-        <section class="footer__left">
-            <p class="first__text">Página sin fines de lucro</p>
-            <p class="second__text">Copyright &copy; Abril Cortés</p>
-        </section>
-        <!--Redes sociales-->
-        <section class="footer__right">
-            <div class="footer__social--container">
+         <section class="footer__left">
+             <p class="first__text">Página sin fines de lucro</p>
+             <p class="second__text">Copyright &copy; Abril Cortés</p>
+         </section>
+         <!--Redes sociales-->
+         <section class="footer__right">
+             <div class="footer__social--container">
                    <a href="https://www.instagram.com/billieeilish" target="_blank">
                        <img src="../assets/icons/instagram.svg" alt="" class="footer__img">
                    </a>
@@ -104,8 +150,9 @@
                    <a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH?si=g8c5TvWQR2eohAM8zz-JuA" target="_blank"> 
                         <img src="../assets/icons/spotify.svg" alt=""  class="footer__img">
                    </a>
-            </div>
-        </section>
-    </footer>
+             </div>
+         </section>
+     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
