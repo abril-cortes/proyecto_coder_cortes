@@ -17,6 +17,7 @@ html {
     width: 100%;
 }
 body {
+    background-color: #8D6E51;
     height: 100vh;
     width: 100%;
     font-family: 'PT Serif', serif;
@@ -28,7 +29,10 @@ body {
     "main"
     "footer";
     overflow: auto;
-    background-image: url('../assets/img/imgfondo.jpg');
+    /*background-image: url('../assets/img/imgfondo.jpg');*/
+}
+.bodycolor {
+    background-color: #8D6E51;
 }
 #main {
     height: auto;
@@ -43,6 +47,16 @@ header {
 }
 
 /*NAV*/
+.navbar {
+    background-color: #7f644a;
+    height: 60px;
+}
+.navbar .container-fluid {
+    background-color: #7f644a;
+}
+.navbar ul {
+    padding-bottom: 10px;
+}
 .nav-item a {
     font-family: 'PT Serif', serif;
     font-size: 17px;
@@ -92,7 +106,7 @@ header {
     height: 30px;
     background-color: #674f3b;
     color: #e1d3bb;
-    font-size: 15px; 
+    font-size: 13px; 
     font-family: 'PT Serif', serif;
     font-weight: 500;
     border-radius: 8px;
@@ -105,6 +119,7 @@ header {
     background-color: #e1d3bb;
     transform: scale(1.2, 1.3);
 }
+
 .title {
     font-size: 24px;
     font-family: 'PT Serif', serif;
@@ -118,15 +133,40 @@ header {
     height: 27px;
     padding: 2px; 
 }
+.subtitle {
+    margin-top: 40px;
+    background-color: #674f3b;
+    margin-bottom: 20px;
+    margin: 30px 20px;
+    width: fit-content;
+    padding: 0 10px;
+}
+.subtitle h2 {
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    color: #e1d3bb;
+    font-size: 24px;
+    font-weight: 500;
+}
+.paragraph p {
+    padding-bottom: 20px;
+    padding: 10px 20px;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+}
 /*MUSIC*/
 
-.main--discography-container, .tour__section--container, .title__videos--container {
-     margin-top: 100px;
+.main--discography-container {
+     /*margin-top: 50px;*/
  }
-.title-dicography-container, .tour__title--container, .title__videos--container, .form_title--container {
+.title-dicography-container, .tour__title--container, .title__videos--container, .title-biography-container , .form_title--container {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 90px;
 }
 .card_row {
     margin: 20px;
@@ -186,6 +226,10 @@ figure p {
 .tour__img {
     margin-top: 20px;
     margin-bottom: 80px;
+    transition: all 1s;
+}
+.tour__img:hover {
+    transform: scale(1.1, 1.1);
 }
 .place__container {
     margin-top: 20px;
@@ -210,6 +254,15 @@ figure p {
     color: rgb(205, 16, 16);
     font-style: italic;
     text-decoration: line-through;
+    transition: all 1s;
+}
+.tickets {
+    color: #e1d3bb;
+    font-style: italic;
+    transition: all 1s;
+}
+.sold__out:hover, .tickets:hover {
+    transform: scale(1.1, 1.1);
 }
 /*VIDEOS*/
 .main--videos-section {
@@ -276,6 +329,7 @@ figure p {
     background-color: #fff;
     width: 90%;
     height: auto;
+    margin-top: 20px;
 }
 .form_title--container {
     margin-top: 30px;
@@ -319,6 +373,11 @@ figure p {
 }
 input {
     margin-top: 15px;
+    transition: all 1s;
+}
+input:hover {
+    transform: scale(1.1, 1.1);
+    border: #e1d3bb;
 }
 ::placeholder {
     color: rgb(175, 175, 175);
@@ -365,6 +424,12 @@ span {
     font-family: 'PT Serif', serif;
     box-shadow: 5px 3px 4px #674f3b;
     height: 40px;
+    transition: all 1s;
+}
+.form_item--pais .form-select:hover {
+    color: #e1d3bb;
+    background-color: #674f3b;
+    transform: scale(1.1, 1.1);
 }
 .form_item--noticias {
     display: inline-block;
@@ -373,6 +438,7 @@ span {
     margin-top: 40px;
     text-align: center;
     justify-items: center;
+    margin-left: 10px;
 }
 .noticias {
     color: #e1d3bb;
@@ -405,7 +471,10 @@ span {
     height: auto;
     border: 0;
     background-color: #e1d3bb;
-    margin-left: 10px;
+    transition: all 1s;
+}
+.comentarios textarea:hover {
+    transform: scale(1.0, 1.1);
 }
 .comentarios label {
     color: #674f3b;
@@ -413,13 +482,15 @@ span {
     font-family: 'PT Serif', serif;
     text-transform: uppercase;
     font-size: 14px;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
+    transform: scale(1.1, 1.1);
 }
 .button {
     display: flex;
     width: 100%;
     justify-content: center;
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 .btn_form {
     width: 100px;
@@ -448,7 +519,7 @@ footer {
     margin-top: auto;
     width: 100%;
     height: auto;
-    background-color: #8D6E51;
+    background-color: #7f644a;
 }
 footer section {
     display: flex;
@@ -487,12 +558,14 @@ footer section {
       width: 100%;
     }
     .navbar-collapse ul{
-      background-color: #8D6E51;
       display: block;
       text-align: center;
     }
     .main__info--container {
-        margin-top: 50px;
+        margin-top: 80px;
+    }
+    .biography_section--container {
+        margin-top: 80px;
     }
     /*tour*/
 
@@ -557,9 +630,9 @@ footer section {
 
 @media (min-width: 465px) {}
 
-@media (min-width: 576px) {}
 
 @media (min-width: 768px) {
+    
     .tour__img {
         height: 90px;
         width: auto;
@@ -582,6 +655,10 @@ footer section {
         background-size:cover;
         background-position: top; 
     }
+    /*.navbar_index {
+        background-image: none;
+        background-color: #8D6E51;
+    }*/
     .nav-item a {
         margin-left: 60px;
     }
@@ -589,13 +666,22 @@ footer section {
         background-color: transparent; 
         display: flex;
     }
+    .main__info--container {
+        margin-top: 120px;
+    }
+    .biography_section--container {
+        width: 100%;
+        margin-top: 150px;
+        padding: 30px;
+        text-align: left;
+    }
     .card-body {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+       display: grid;
+       grid-template-columns: 50% 50%;
+       grid-template-rows: auto;
+       justify-content: center;
+       align-items: center;
+       align-content: center;
     }
     /*videos*/
     .videos__section {
@@ -628,342 +714,3 @@ footer section {
 
 
 
-/*MOBILE
-
-@media screen and (min-width: 320px) {
-    
-    /*BARRA DE NAVEGACIÓN*
-
-    #navbar {
-       background-color: #8D6E51;
-       opacity: 1;
-    }
-    #navbar .navbar__list {
-       display: none;
-    }
-    #navbar .menu_item {
-        align-self: center;
-        justify-self: end;
-        transition: all 1s;
-    }
-    #navbar .menu_item:hover {
-        transform: scale(1.2, 1.3);
-    }
-    .menu_item img {
-        width: 30px;
-        height: 30px;
-        margin: 15px 15px;
-    }
-
-     /*MAIN SECTION*
-   
-     .main__info--container {
-         margin-top: 40px;
-     }
-    /*MUSIC*
-
-    .album-item {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .album--container {
-        align-self: center;
-        margin: 30px;
-        color: #e1d3bb;
-    }
-
-    /*TOUR*
-
-   .tour__img {
-       width: auto;
-       height: 50px;
-   }
-    .tour__date {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    .date {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    }
-    .date__container {
-        background-color: rgba(211,194,154,.3);
-        width: 70px;
-        height: 70px;
-       /* margin: 10px 260px; provisorio*
-    }
-    .date__container span {
-        display: flex;
-        justify-content: center;
-        color: #e1d3bb;
-        font-weight: 900;
-        text-align: center;
-        text-transform: none;
-     }
-     .month {
-        padding-top: 10px;
-        font-size: 16px;
-        line-height: 1;
-    }
-    .day {
-        font-size: 25px;
-        line-height: 1;
-        margin-top: 5px;
-    }
-
-    /*VIDEOS*
-
-    .videos__section {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-        gap: 40px;
-       /* justify-items: center;
-        margin-top: 40px;
-        margin-bottom: 40px;*
-        justify-content: center;
-    }
-
-    /*SIGN UP*
-
-    .form_campos--container {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        gap: 40px;
-        text-align: left;
-        margin-top: 50px;
-        justify-content: center;
-    }
-
-    /*FOOTER*
-
-    footer {
-        position: relative;
-        display: block;
-        width: 100%;
-        height: auto;
-        background-color: #8D6E51;
-    }
-    footer section {
-        display: flex;
-        width: 100%;
-        align-content: center;
-        align-items: center;
-    }
-    .footer__left {
-        justify-content: center;
-    }
-    .footer__left p  {
-        margin: 20px;
-    }
-    .footer__social--container {
-        margin: 10px 10px;
-    }
-    .footer__right {
-        justify-content: center;
-    }
-    .footer__right a {
-        text-decoration: none;
-        margin: 10px;
-    } 
-}
-/*TABLET*
-@media screen and (min-width: 600px) {
-    .main__info--container {
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }
-    /*TOUR*
-    .tour__img {
-        height: 80px;
-    }
-    .tour__date {
-        display: grid;
-        grid-template-columns: 20% 60% 20%;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "date place tickets";
-        justify-content: center;
-        align-items: center;
-     }
-     .date__container {
-         grid-area: date;
-         background-color: rgba(211,194,154,.3);
-         width: 90px;
-         height: 90px;
-         margin: 10px;
-         justify-self: end;
-     }
-     .date__container span {
-         display: flex;
-         justify-content: center;
-         color: #e1d3bb;
-         font-weight: 900;
-         text-align: center;
-         text-transform: none;
-      }
-      .month {
-         font-size: 18px;
-         line-height: 1;
-         margin-top: 10px;
-     }
-     .day {
-         font-size: 30px;
-         line-height: 1;
-         margin-top: 5px;
-     }
-     .place__container {
-         grid-area: place;
-     }
-     footer {
-         width: 100%;
-     }
-}
-
-@media screen and (min-width: 900px) {
-    #body {
-        background-image: url(../assets/img/3200x1800_edited.jpg);
-        background-color: #8D6E51;
-        background-size:cover;
-        background-position: top; 
-        background-repeat: no-repeat;
-        height: auto;
-    }
-    #main {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 600px;
-        width: 100%;
-        height: auto;
-        background-color: transparent;
-        background-image: none;
-    }
-    .main__info--container {
-        margin-top: 80px;
-    }
-    #navbar {
-        background-color: transparent;
-        opacity: 1;
-    }
-    /*MUSIC SECTION
-
-    .album-item {
-        display: grid;
-        grid-template-columns: 60% 50%;
-        grid-template-rows: 400px;
-        grid-template-areas: "album imagen";
-        text-align: left;
-    }
-    .album--container {
-        align-self: center;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    .album--container {
-       grid-area: album;
-    }
-    .imagen {
-      grid-area: imagen;
-    }
-    /*TOUR
-    .tour__img {
-        height: 100px;
-    }
-    
-    /*VIDEOS
-    
-    .videos__section {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        gap: 40px;
-       /* justify-items: center;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        justify-content: center;
-    }
-
-    /*SIGN UP
-    
-    .form_campos--container {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-        text-align: left;
-        margin-top: 50px;
-    }
-    /*FOOTER
-
-    footer {
-        position: relative;
-        display: flex;
-        margin-top: auto;
-        width: 100%;
-        min-width: 320px;
-        height: 80px;
-        background-color: #8D6E51;
-    }
-    footer section {
-        display: flex;
-        width: 100%;
-        align-content: center;
-        align-items: center;
-    }
-    .footer__left {
-        justify-content: space-around;
-    }
-    
-    .footer__social--container {
-        margin: 10px 10px;
-    }
-    .footer__right {
-        justify-content: end;
-    }
-    .footer__right a {
-        text-decoration: none;
-        padding-right: 50px;
-    } 
-   
-}
-
-/*DESKTOP
-
-@media screen and (min-width: 1000px) {
-   /* #main {
-        overflow: hidden;
-    }
-    
-    #navbar .navbar__list {
-        display: flex;
-        list-style: none;
-        margin-top: 10px;
-    }
-    #navbar .navbar__list li {
-        line-height: 80px;
-        padding: 0 50px;
-        font-weight: 500;
-        transition: all 1s;
-    }
-    #navbar .navbar__list li:hover {
-        transform: scale(1.2, 1.3);
-    }
-    #navbar .navbar__list li a { 
-        color: #e1d3bb;
-        font-size: 17px;
-        text-decoration: none;
-    }
-    #navbar .navbar__list li a:hover {
-        color: #674f3b;
-    }
-    #navbar .menu_item {
-        display: none;
-    }
-    
-}
-*/
