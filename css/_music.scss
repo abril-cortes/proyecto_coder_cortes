@@ -1,0 +1,40 @@
+.card_row {
+   margin: 20px;
+   padding: 0 30px;
+   font-family: 'PT Serif', serif;
+   .album-title {
+      color: $dark-brown;
+      font-family: 'PT Serif', serif;
+      letter-spacing: 0.2rem;
+      text-indent: 0.1rem;
+      font-weight: 900;
+      line-height: 1;
+      font-style: italic;
+      font-size: 20px;
+  }
+  .card-text {
+      color: $background-color;
+      font-weight: 500;
+      font-style: italic;
+      font-size: 17px;
+      text-align: center;
+   }
+  .imagen {
+      justify-self: end;
+      align-self: center;
+      text-align: center;
+      color: $cream;
+      transition: all 1s;
+      &:hover {
+         transform: scale(1.1, 1.1);
+      }
+      img {
+         box-shadow: 5px 3px 4px $dark-brown;
+      }
+      p {
+         margin-top: 10px;
+         color: $background-color;
+         font-weight: 500;
+      }
+  }
+}

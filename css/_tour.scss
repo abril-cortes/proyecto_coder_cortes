@@ -1,0 +1,58 @@
+.tour__section--container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    .tour__img--container {
+       display: flex;
+       justify-content: center;
+       .tour__img {
+           margin-top: 20px;
+           margin-bottom: 80px;
+           transition: all 1s;
+           &:hover {
+               transform: scale(1.1, 1.1);
+           }
+       }
+   }
+   .tour__dates--container {
+      .place__container {
+           margin-top: 20px;
+           .place__title {
+               color: $cream;
+               font-size: 28px;
+               font-style: italic;
+               font-weight: 700;
+               margin-bottom: 5px;
+           }
+           .country {
+               color: $just-white;
+               font-size: 18px;
+               font-style: italic;
+               letter-spacing: 0.1rem;
+           }
+       }
+       .tickets__container {
+            margin-bottom: 30px;
+            a {
+                text-decoration: none;
+                .sold__out {
+                    color: $red-span;
+                    font-style: italic;
+                    text-decoration: line-through;
+                    transition: all 1s;
+                    &:hover {
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+                .tickets {
+                    color: $cream;
+                    font-style: italic;
+                    transition: all 1s;
+                    &:hover {
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.main__info--container {
+    padding: 30px;
+    text-align: center;
+    .info__img--container img {
+     height: 70px;
+     width: auto;
+     transition: all 1s;
+     &:hover {
+        transform: skew(20deg);
+     }
+   }
+   .info__text--container {
+     color: $just-white;
+     p {
+       color: $just-white;
+       font-size: 18px;
+       line-height: 1.8;
+       padding-bottom: 20px;
+       text-align: center;
+     }
+   }
+}
+.biography_section--container {
+    .subtitle {
+      margin-top: 40px;
+      background-color: $dark-brown;
+      margin-bottom: 20px;
+      margin: 30px 20px;
+      width: fit-content;
+      padding: 0 10px;
+      h2 {
+        font-family: 'PT Serif', serif;
+        font-style: italic;
+        color: $cream;
+        font-size: 24px;
+        font-weight: 500;
+      }
+   }
+   .paragraph {
+      p {
+        padding-bottom: 20px;
+        padding: 10px 20px;
+        font-family: 'PT Serif', serif;
+        font-style: italic;
+        color: $just-white;
+        font-size: 17px;
+        font-weight: 300;
+      }
+    }
+}

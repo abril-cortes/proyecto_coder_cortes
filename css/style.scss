@@ -1,0 +1,101 @@
+@import "nav";
+@import "responsive";
+@import "home";
+@import "footer";
+@import "music";
+@import "tour";
+@import "videos";
+@import "sign";
+@import "utilities/variables";
+@import "utilities/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*ESTILOS GENERALES*/
+html {
+    font-size: 62,5%;
+    scroll-behavior:smooth;
+}  
+#body {
+    font-family: 'PT Serif', serif;
+    height: 100vh;
+    width: 100%;
+}
+body {
+    background-color: $background-color;
+    height: 100vh;
+    width: 100%;
+    font-family: 'PT Serif', serif;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 10%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    overflow: hidden;
+    /*background-image: url('../assets/img/imgfondo.jpg');*/
+}
+.bodycolor {
+    background-color: $background-color;
+}
+#main {
+    height: auto;
+    display: grid;
+}
+main {
+    grid-area: main;
+}
+
+header {
+    grid-area: header;
+}
+
+/*botones generales*/
+
+.general-btn {
+    margin-bottom: 20px;
+    width: 90px;
+    height: 30px;
+    background-color: $dark-brown;
+    color: $cream;
+    font-size: 13px; 
+    font-family: 'PT Serif', serif;
+    font-weight: 500;
+    border-radius: 8px;
+    border: $cream;
+    box-shadow: 5px 3px 4px $dark-brown;
+    transition: all 1s;
+    &:hover {
+        color: $dark-brown;
+        background-color: $cream;
+        transform: scale(1.2, 1.3);
+    }
+}
+ /*titulos generales*/
+
+ .title-dicography-container, .tour__title--container, .title__videos--container, .title-biography-container , .form_title--container {
+    /*display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 90px;*/
+    .title {
+        font-family: 'PT Serif', serif;
+        font-size: 24px;
+        width: auto;
+        color: $background-color;
+        background-color: $cream;
+        letter-spacing: 1rem;
+        text-indent: 0.8rem;
+        font-weight: 900;
+        line-height: 1;
+        height: 27px;
+        padding: 2px; 
+   }
+ }
+ 
+

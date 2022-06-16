@@ -1,0 +1,202 @@
+.main--form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+    .main--form {
+        background-color: $just-white;
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+        .form_title--container {
+            margin-top: 30px;
+            .form_title {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                font-size: 24px;
+                color: $background-color;
+                letter-spacing: 1rem;
+                text-indent: 0.8rem;
+                font-weight: 900;
+                line-height: 1;
+                padding: 2px; 
+                font-style: italic;
+                font-family: 'PT Serif', serif;
+            }
+        }
+        .form_item {
+            display: grid;
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+            justify-content: center;
+            &::after {
+                content: "";
+                display: block;
+                width: 100%;
+                margin-top: 10px;
+                height: 2px;
+                background-color: $cream;
+            }
+            .campos {
+                border: 0;
+                color: $cream;
+                text-transform: uppercase;
+                font-style: italic;
+                font-family: 'PT Serif', serif;
+                font-weight: 700;
+                font-size: 15px;
+                letter-spacing: 2px;
+                width: 250px;
+                margin-top: 15px;
+                text-align: left;
+            }
+            .input_item {
+                border: 0;
+                text-transform: uppercase;
+                font-style: italic;
+                font-weight: 600;
+                font-size: 12px;
+                letter-spacing: 2px;
+                width: 250px;
+                display: block;
+                margin-top: 15px;
+            }
+            input {
+                margin-top: 15px;
+                transition: all 1s;
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                    border: $cream;
+                }
+                ::placeholder {
+                    color: rgb(175, 175, 175);
+                }
+            }
+            span {
+                color: $red-span;
+                display: inline-block;
+            }
+        }
+        .select-country {
+            margin-top: 30px;
+            .form_item--pais {
+                display: grid;
+                text-align: center;
+                margin-top: 20px;
+                width: 100%;
+                justify-content: center;
+                select {
+                    display: block;
+                    margin-top: 15px;
+                    border: 0;
+                    color: $cream;
+                    appearance: none; 
+                    font-style: italic;
+                    font-weight: 700;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    width: 250px;
+                    .form-select {
+                        background-color: $cream;
+                        color: $dark-brown;
+                        font-size: 16px;
+                        font-style: italic;
+                        font-family: 'PT Serif', serif;
+                        box-shadow: 5px 3px 4px $dark-brown;
+                        height: 40px;
+                        transition: all 1s;
+                        &:hover {
+                            color: $cream;
+                            background-color: $dark-brown;
+                            transform: scale(1.1, 1.1);
+                        }
+                    }
+                }
+            } 
+        }
+        .form_item--noticias {
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            text-align: center;
+            justify-items: center;
+            margin-left: 10px;
+            .noticias {
+                color: #e1d3bb;
+                text-transform: uppercase;
+                font-style: italic;
+                font-family: 'PT Serif', serif;
+                font-weight: 700;
+                font-size: 15px;
+                letter-spacing: 2px;
+                margin: 10px 0;
+                text-align: center;
+                .span_billie {
+                    color: #af976d;
+                    font-weight: 700;
+                }
+            }
+        }
+        .comment {
+            p {
+                color: #e1d3bb;
+                text-transform: uppercase;
+                font-style: italic;
+                font-family: 'PT Serif', serif;
+                font-weight: 700;
+                font-size: 15px;
+                letter-spacing: 2px;
+                margin: 20px 0;
+                text-align: center;
+            }
+            textarea {
+                margin-top: 10px;
+                height: auto;
+                border: 0;
+                background-color: #e1d3bb;
+                transition: all 1s;
+                &:hover {
+                    transform: scale(1.0, 1.1);
+                }
+            }
+            label {
+                color: #674f3b;
+                font-style: italic;
+                font-family: 'PT Serif', serif;
+                text-transform: uppercase;
+                font-size: 14px;
+                /*margin-left: 10px;*/
+                transform: scale(1.1, 1.1);
+            }
+        }
+        .button {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            .btn_form {
+                width: 100px;
+                height: 30px;
+                background-color: #674f3b;
+                color: #e1d3bb;
+                font-size: 12px; 
+                font-weight: 600;
+                font-style: italic;
+                text-transform: uppercase;
+                border-radius: 8px;
+                border: #e1d3bb;
+                box-shadow: 5px 3px 4px #674f3b;
+                margin: 10px;
+                &:hover {
+                    color: #674f3b;
+                    background-color: #e1d3bb;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
