@@ -3,7 +3,7 @@ footer {
     margin-top: auto;
     width: 100%;
     height: auto;
-    background-color: $mav-footer-color;
+    background-color: $nav-footer-color;
 }
 footer section {
     display: flex;
@@ -14,7 +14,7 @@ footer section {
     justify-content: space-around;
 }
 .footer__left p  {
-    color: #e1d3bb;
+    color: $cream;
     font-size: 12px;
     font-weight: 500;
     margin: 20px;
