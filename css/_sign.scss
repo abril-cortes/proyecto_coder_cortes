@@ -52,9 +52,10 @@
                 margin-top: 15px;
                 text-align: left;
             }
-            .input_item {
-                border: 0;
+            input {
+                margin-top: 15px;
                 text-transform: uppercase;
+                border: 0;
                 font-style: italic;
                 font-weight: 600;
                 font-size: 12px;
@@ -62,16 +63,9 @@
                 width: 250px;
                 display: block;
                 margin-top: 15px;
-            }
-            input {
-                margin-top: 15px;
                 transition: all 1s;
                 &:hover {
                     transform: scale(1.1, 1.1);
-                    border: $cream;
-                }
-                ::placeholder {
-                    color: rgb(175, 175, 175);
                 }
             }
             span {
@@ -91,27 +85,22 @@
                     display: block;
                     margin-top: 15px;
                     border: 0;
-                    color: $cream;
+                    color: $dark-brown;
+                    background-color: $cream;
                     appearance: none; 
                     font-style: italic;
+                    font-family: 'PT Serif', serif;
                     font-weight: 700;
-                    font-size: 12px;
                     letter-spacing: 2px;
                     width: 250px;
-                    .form-select {
-                        background-color: $cream;
-                        color: $dark-brown;
-                        font-size: 16px;
-                        font-style: italic;
-                        font-family: 'PT Serif', serif;
-                        box-shadow: 5px 3px 4px $dark-brown;
-                        height: 40px;
-                        transition: all 1s;
-                        &:hover {
-                            color: $cream;
-                            background-color: $dark-brown;
-                            transform: scale(1.1, 1.1);
-                        }
+                    font-size: 16px;
+                    box-shadow: 5px 3px 4px $dark-brown;
+                    height: 40px;
+                    transition: all 1s;
+                    &:hover {
+                        color: $cream;
+                        background-color: $dark-brown;
+                        transform: scale(1.1, 1.1);
                     }
                 }
             } 
@@ -134,10 +123,11 @@
                 letter-spacing: 2px;
                 margin: 10px 0;
                 text-align: center;
-                .span_billie {
-                    color: #af976d;
-                    font-weight: 700;
-                }
+                
+            }
+            .span_billie {
+                color: #af976d;
+                font-weight: 700;
             }
         }
         .comment {

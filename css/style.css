@@ -202,69 +202,31 @@
     padding-right: 50px;
   }
 }
+/*Map*/
 .main__info--container {
   padding: 30px;
   text-align: center;
 }
-
-.info__img--container img {
+.main__info--container .info__img--container img {
   height: 70px;
   width: auto;
   transition: all 1s;
 }
-
-.info__img--container img:hover {
+.main__info--container .info__img--container img:hover {
   transform: skew(20deg);
 }
-
-.info__text--container {
+.main__info--container .info__text--container {
   color: #fff;
 }
-
-.info__text--container p {
-  color: rgb(239, 239, 239);
+.main__info--container .info__text--container p {
+  color: #fff;
   font-size: 18px;
   line-height: 1.8;
   padding-bottom: 20px;
   text-align: center;
 }
 
-.general-btn {
-  margin-bottom: 20px;
-  width: 90px;
-  height: 30px;
-  background-color: #674f3b;
-  color: #e1d3bb;
-  font-size: 13px;
-  font-family: "PT Serif", serif;
-  font-weight: 500;
-  border-radius: 8px;
-  border: #e1d3bb;
-  box-shadow: 5px 3px 4px #674f3b;
-  transition: all 1s;
-}
-
-.general-btn:hover {
-  color: #674f3b;
-  background-color: #e1d3bb;
-  transform: scale(1.2, 1.3);
-}
-
-.title {
-  font-size: 24px;
-  font-family: "PT Serif", serif;
-  width: auto;
-  color: #8D6E51;
-  background-color: #e1d3bb;
-  letter-spacing: 1rem;
-  text-indent: 0.8rem;
-  font-weight: 900;
-  line-height: 1;
-  height: 27px;
-  padding: 2px;
-}
-
-.subtitle {
+.biography_section--container .subtitle {
   margin-top: 40px;
   background-color: #674f3b;
   margin-bottom: 20px;
@@ -274,16 +236,14 @@
   width: fit-content;
   padding: 0 10px;
 }
-
-.subtitle h2 {
+.biography_section--container .subtitle h2 {
   font-family: "PT Serif", serif;
   font-style: italic;
   color: #e1d3bb;
   font-size: 24px;
   font-weight: 500;
 }
-
-.paragraph p {
+.biography_section--container .paragraph p {
   padding-bottom: 20px;
   padding: 10px 20px;
   font-family: "PT Serif", serif;
@@ -291,6 +251,343 @@
   color: #fff;
   font-size: 17px;
   font-weight: 300;
+}
+
+.card_row {
+  margin: 20px;
+  padding: 0 30px;
+  font-family: "PT Serif", serif;
+}
+.card_row .album-title {
+  color: #674f3b;
+  font-family: "PT Serif", serif;
+  letter-spacing: 0.2rem;
+  text-indent: 0.1rem;
+  font-weight: 900;
+  line-height: 1;
+  font-style: italic;
+  font-size: 20px;
+}
+.card_row .card-text {
+  color: #8D6E51;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 17px;
+  text-align: center;
+}
+.card_row .imagen {
+  justify-self: end;
+  align-self: center;
+  text-align: center;
+  color: #e1d3bb;
+  transition: all 1s;
+}
+.card_row .imagen:hover {
+  transform: scale(1.1, 1.1);
+}
+.card_row .imagen img {
+  box-shadow: 5px 3px 4px #674f3b;
+}
+.card_row .imagen p {
+  margin-top: 10px;
+  color: #8D6E51;
+  font-weight: 500;
+}
+
+.tour__section--container {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.tour__section--container .tour__img--container {
+  display: flex;
+  justify-content: center;
+}
+.tour__section--container .tour__img--container .tour__img {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  transition: all 1s;
+}
+.tour__section--container .tour__img--container .tour__img:hover {
+  transform: scale(1.1, 1.1);
+}
+.tour__section--container .tour__dates--container .place__container {
+  margin-top: 20px;
+}
+.tour__section--container .tour__dates--container .place__container .place__title {
+  color: #e1d3bb;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.tour__section--container .tour__dates--container .place__container .country {
+  color: #fff;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+}
+.tour__section--container .tour__dates--container .tickets__container {
+  margin-bottom: 30px;
+}
+.tour__section--container .tour__dates--container .tickets__container a {
+  text-decoration: none;
+}
+.tour__section--container .tour__dates--container .tickets__container a .sold__out {
+  color: red;
+  font-style: italic;
+  text-decoration: line-through;
+  transition: all 1s;
+}
+.tour__section--container .tour__dates--container .tickets__container a .sold__out:hover {
+  transform: scale(1.1, 1.1);
+}
+.tour__section--container .tour__dates--container .tickets__container a .tickets {
+  color: #e1d3bb;
+  font-style: italic;
+  transition: all 1s;
+}
+.tour__section--container .tour__dates--container .tickets__container a .tickets:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.main--videos-section {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  text-align: center;
+  /*margin-top: 50px;*/
+}
+.main--videos-section .main--videos-container .title__performance {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  margin-top: 30px;
+}
+.main--videos-section .main--videos-container .title__performance .video_title {
+  color: #e1d3bb;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-family: "Tangerine", cursive;
+}
+.main--videos-section .main--videos-container .videos__section a {
+  color: #e1d3bb;
+  text-decoration: none;
+  transition: all 1s;
+}
+.main--videos-section .main--videos-container .videos__section a:hover {
+  transform: scale(1.1, 1.1);
+}
+.main--videos-section .main--videos-container .videos__section a p {
+  margin-top: 10px;
+}
+.main--videos-section .main--videos-container .videos__section a p:visited {
+  color: #e1d3bb;
+}
+.main--videos-section .main--videos-container .videos__section iframe {
+  transition: all 1s;
+}
+.main--videos-section .main--videos-container .videos__section iframe:hover {
+  transform: scale(1.1, 1.1);
+}
+.main--videos-section .fotos_container {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.main--form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.main--form-container .main--form {
+  background-color: #fff;
+  width: 90%;
+  height: auto;
+  margin-top: 20px;
+}
+.main--form-container .main--form .form_title--container {
+  margin-top: 30px;
+}
+.main--form-container .main--form .form_title--container .form_title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #8D6E51;
+  letter-spacing: 1rem;
+  text-indent: 0.8rem;
+  font-weight: 900;
+  line-height: 1;
+  padding: 2px;
+  font-style: italic;
+  font-family: "PT Serif", serif;
+}
+.main--form-container .main--form .form_item {
+  display: grid;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
+.main--form-container .main--form .form_item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  height: 2px;
+  background-color: #e1d3bb;
+}
+.main--form-container .main--form .form_item .campos {
+  border: 0;
+  color: #e1d3bb;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  width: 250px;
+  margin-top: 15px;
+  text-align: left;
+}
+.main--form-container .main--form .form_item input {
+  margin-top: 15px;
+  text-transform: uppercase;
+  border: 0;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 2px;
+  width: 250px;
+  display: block;
+  margin-top: 15px;
+  transition: all 1s;
+}
+.main--form-container .main--form .form_item input:hover {
+  transform: scale(1.1, 1.1);
+}
+.main--form-container .main--form .form_item span {
+  color: red;
+  display: inline-block;
+}
+.main--form-container .main--form .select-country {
+  margin-top: 30px;
+}
+.main--form-container .main--form .select-country .form_item--pais {
+  display: grid;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
+.main--form-container .main--form .select-country .form_item--pais select {
+  display: block;
+  margin-top: 15px;
+  border: 0;
+  color: #674f3b;
+  background-color: #e1d3bb;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-style: italic;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  width: 250px;
+  font-size: 16px;
+  box-shadow: 5px 3px 4px #674f3b;
+  height: 40px;
+  transition: all 1s;
+}
+.main--form-container .main--form .select-country .form_item--pais select:hover {
+  color: #e1d3bb;
+  background-color: #674f3b;
+  transform: scale(1.1, 1.1);
+}
+.main--form-container .main--form .form_item--noticias {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  text-align: center;
+  justify-items: center;
+  margin-left: 10px;
+}
+.main--form-container .main--form .form_item--noticias .noticias {
+  color: #e1d3bb;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  text-align: center;
+}
+.main--form-container .main--form .form_item--noticias .span_billie {
+  color: #af976d;
+  font-weight: 700;
+}
+.main--form-container .main--form .comment p {
+  color: #e1d3bb;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin: 20px 0;
+  text-align: center;
+}
+.main--form-container .main--form .comment textarea {
+  margin-top: 10px;
+  height: auto;
+  border: 0;
+  background-color: #e1d3bb;
+  transition: all 1s;
+}
+.main--form-container .main--form .comment textarea:hover {
+  transform: scale(1, 1.1);
+}
+.main--form-container .main--form .comment label {
+  color: #674f3b;
+  font-style: italic;
+  font-family: "PT Serif", serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  /*margin-left: 10px;*/
+  transform: scale(1.1, 1.1);
+}
+.main--form-container .main--form .button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.main--form-container .main--form .button .btn_form {
+  width: 100px;
+  height: 30px;
+  background-color: #674f3b;
+  color: #e1d3bb;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: #e1d3bb;
+  box-shadow: 5px 3px 4px #674f3b;
+  margin: 10px;
+}
+.main--form-container .main--form .button .btn_form:hover {
+  color: #674f3b;
+  background-color: #e1d3bb;
+  font-weight: 600;
 }
 
 footer {
@@ -335,420 +632,6 @@ footer section {
   transform: scale(1.2, 1.3);
 }
 
-.title-dicography-container, .tour__title--container, .title__videos--container, .title-biography-container, .form_title--container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-  margin-top: 90px;
-}
-
-.card_row {
-  margin: 20px;
-  padding: 0 30px;
-  font-family: "PT Serif", serif;
-}
-
-.album-title {
-  color: #674f3b;
-  font-family: "PT Serif", serif;
-  letter-spacing: 0.2rem;
-  text-indent: 0.1rem;
-  font-weight: 900;
-  line-height: 1;
-  font-style: italic;
-  font-size: 20px;
-}
-
-.card-text {
-  color: #8D6E51;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 17px;
-  text-align: left;
-}
-
-.imagen {
-  justify-self: end;
-  align-self: center;
-  text-align: center;
-  color: #e1d3bb;
-  transition: all 1s;
-}
-
-.imagen:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.imagen img {
-  box-shadow: 5px 3px 4px #674f3b;
-}
-
-.imagen p {
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-
-figure p {
-  margin: 0;
-  color: #8D6E51;
-  font-weight: 500;
-}
-
-.tour__section--container {
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-
-.tour__img--container {
-  display: flex;
-  justify-content: center;
-}
-
-.tour__img {
-  margin-top: 20px;
-  margin-bottom: 80px;
-  transition: all 1s;
-}
-
-.tour__img:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.place__container {
-  margin-top: 20px;
-}
-
-.place__title {
-  color: #e1d3bb;
-  font-size: 28px;
-  font-style: italic;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.country {
-  color: #fff;
-  font-size: 18px;
-  font-style: italic;
-  letter-spacing: 0.1rem;
-}
-
-.tickets__container {
-  margin-bottom: 30px;
-}
-
-.tickets__container a {
-  text-decoration: none;
-}
-
-.sold__out {
-  color: rgb(205, 16, 16);
-  font-style: italic;
-  text-decoration: line-through;
-  transition: all 1s;
-}
-
-.tickets {
-  color: #e1d3bb;
-  font-style: italic;
-  transition: all 1s;
-}
-
-.sold__out:hover, .tickets:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.main--videos-section {
-  width: 100%;
-  height: auto;
-  margin-top: 50px;
-  text-align: center;
-  /*margin-top: 50px;*/
-}
-
-.title__performance {
-  display: flex;
-  justify-content: center;
-  padding: 30px 0;
-  margin-top: 30px;
-}
-
-.video_title {
-  color: #e1d3bb;
-  font-size: 3rem;
-  font-style: italic;
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-family: "Tangerine", cursive;
-}
-
-.main--videos-container .general-btn {
-  justify-self: center;
-  margin: 40px 0;
-}
-
-.videos__section a {
-  color: #e1d3bb;
-  text-decoration: none;
-  transition: all 1s;
-}
-
-.videos__section a:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.videos__section a p {
-  margin-top: 10px;
-}
-
-.videos__section a:visited {
-  color: #e1d3bb;
-}
-
-.videos__section iframe {
-  transition: all 1s;
-}
-
-.videos__section iframe:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.fotos_container {
-  width: 100%;
-  height: auto;
-  margin-top: 50px;
-}
-
-.main--form-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.main--form {
-  background-color: #fff;
-  width: 90%;
-  height: auto;
-  margin-top: 20px;
-}
-
-.form_title--container {
-  margin-top: 30px;
-}
-
-.form_title {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 24px;
-  color: #8D6E51;
-  letter-spacing: 1rem;
-  text-indent: 0.8rem;
-  font-weight: 900;
-  line-height: 1;
-  padding: 2px;
-  font-style: italic;
-  font-family: "PT Serif", serif;
-}
-
-.campos {
-  border: 0;
-  color: #e1d3bb;
-  text-transform: uppercase;
-  font-style: italic;
-  font-family: "PT Serif", serif;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 2px;
-  width: 250px;
-  margin-top: 15px;
-  text-align: left;
-}
-
-.input_item {
-  border: 0;
-  text-transform: uppercase;
-  font-style: italic;
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 2px;
-  width: 250px;
-  display: block;
-  margin-top: 15px;
-}
-
-input {
-  margin-top: 15px;
-  transition: all 1s;
-}
-
-input:hover {
-  transform: scale(1.1, 1.1);
-  border: #e1d3bb;
-}
-
-::-moz-placeholder {
-  color: rgb(175, 175, 175);
-}
-
-:-ms-input-placeholder {
-  color: rgb(175, 175, 175);
-}
-
-::placeholder {
-  color: rgb(175, 175, 175);
-}
-
-select {
-  display: block;
-  margin-top: 15px;
-  border: 0;
-  color: #e1d3bb;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 12px;
-  letter-spacing: 2px;
-  width: 250px;
-}
-
-span {
-  color: red;
-  display: inline-block;
-}
-
-.form_item, .form_item--pais {
-  display: grid;
-  text-align: center;
-  margin-top: 20px;
-  width: 100%;
-  justify-content: center;
-}
-
-.select-country {
-  margin-top: 30px;
-}
-
-.form_item::after {
-  content: "";
-  display: block;
-  width: 100%;
-  margin-top: 10px;
-  height: 2px;
-  background-color: #e1d3bb;
-}
-
-.form_item--pais .form-select {
-  background-color: #e1d3bb;
-  color: #674f3b;
-  font-size: 16px;
-  font-style: italic;
-  font-family: "PT Serif", serif;
-  box-shadow: 5px 3px 4px #674f3b;
-  height: 40px;
-  transition: all 1s;
-}
-
-.form_item--pais .form-select:hover {
-  color: #e1d3bb;
-  background-color: #674f3b;
-  transform: scale(1.1, 1.1);
-}
-
-.form_item--noticias {
-  display: inline-block;
-  width: 100%;
-  height: auto;
-  margin-top: 40px;
-  text-align: center;
-  justify-items: center;
-  margin-left: 10px;
-}
-
-.noticias {
-  color: #e1d3bb;
-  text-transform: uppercase;
-  font-style: italic;
-  font-family: "PT Serif", serif;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 2px;
-  margin: 10px 0;
-  text-align: center;
-}
-
-.span_billie {
-  color: #af976d;
-  font-weight: 700;
-}
-
-.comment p {
-  color: #e1d3bb;
-  text-transform: uppercase;
-  font-style: italic;
-  font-family: "PT Serif", serif;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 2px;
-  margin: 20px 0;
-  text-align: center;
-}
-
-.comentarios textarea {
-  margin-top: 10px;
-  height: auto;
-  border: 0;
-  background-color: #e1d3bb;
-  transition: all 1s;
-}
-
-.comentarios textarea:hover {
-  transform: scale(1, 1.1);
-}
-
-.comentarios label {
-  color: #674f3b;
-  font-style: italic;
-  font-family: "PT Serif", serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  /*margin-left: 10px;*/
-  transform: scale(1.1, 1.1);
-}
-
-.button {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-.btn_form {
-  width: 100px;
-  height: 30px;
-  background-color: #674f3b;
-  color: #e1d3bb;
-  font-size: 12px;
-  font-weight: 600;
-  font-style: italic;
-  text-transform: uppercase;
-  border-radius: 8px;
-  border: #e1d3bb;
-  box-shadow: 5px 3px 4px #674f3b;
-  margin: 10px;
-}
-
-.btn_form:hover {
-  color: #674f3b;
-  background-color: #e1d3bb;
-  font-weight: 600;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -776,7 +659,7 @@ body {
   grid-template-columns: auto;
   grid-template-rows: auto auto 10%;
   grid-template-areas: "header" "main" "footer";
-  overflow: auto;
+  overflow: scroll;
   /*background-image: url('../assets/img/imgfondo.jpg');*/
 }
 
@@ -795,4 +678,46 @@ main {
 
 header {
   grid-area: header;
+}
+
+/*botones generales*/
+.general-btn, .main--videos-section .main--videos-container button {
+  margin-bottom: 20px;
+  width: 90px;
+  height: 30px;
+  background-color: #674f3b;
+  color: #e1d3bb;
+  font-size: 13px;
+  font-family: "PT Serif", serif;
+  font-weight: 500;
+  border-radius: 8px;
+  border: #e1d3bb;
+  box-shadow: 5px 3px 4px #674f3b;
+  transition: all 1s;
+}
+.general-btn:hover, .main--videos-section .main--videos-container button:hover {
+  color: #674f3b;
+  background-color: #e1d3bb;
+  transform: scale(1.2, 1.3);
+}
+
+/*titulos generales*/
+.title-dicography-container, .tour__title--container, .title__videos--container, .title-biography-container, .form_title--container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 90px;
+}
+.title-dicography-container .title, .tour__title--container .title, .title__videos--container .title, .title-biography-container .title, .form_title--container .title {
+  font-family: "PT Serif", serif;
+  font-size: 24px;
+  width: auto;
+  color: #8D6E51;
+  background-color: #e1d3bb;
+  letter-spacing: 1rem;
+  text-indent: 0.8rem;
+  font-weight: 900;
+  line-height: 1;
+  height: 27px;
+  padding: 2px;
 }/*# sourceMappingURL=style.css.map */

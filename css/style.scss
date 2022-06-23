@@ -1,12 +1,14 @@
+@import "utilities/vars";
+@import "utilities/mixins";
 @import "nav";
 @import "responsive";
 @import "home";
-@import "footer";
 @import "music";
 @import "tour";
 @import "videos";
 @import "sign";
-@import "utilities/vars";
+@import "footer";
+
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 * {
     padding: 0;
@@ -36,7 +38,7 @@ body {
     "header"
     "main"
     "footer";
-    overflow: hidden;
+    overflow: scroll;
     /*background-image: url('../assets/img/imgfondo.jpg');*/
 }
 .bodycolor {
@@ -78,10 +80,10 @@ header {
  /*titulos generales*/
 
  .title-dicography-container, .tour__title--container, .title__videos--container, .title-biography-container , .form_title--container {
-    /*display: flex;
+    display: flex;
     justify-content: center;
     margin-bottom: 40px;
-    margin-top: 90px;*/
+    margin-top: 90px;
     .title {
         font-family: 'PT Serif', serif;
         font-size: 24px;
