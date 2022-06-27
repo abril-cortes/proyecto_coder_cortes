@@ -257,21 +257,21 @@
   margin: 20px;
   padding: 0 30px;
   font-family: "PT Serif", serif;
+  font-style: italic;
 }
 .card_row .album-title {
   color: #674f3b;
-  font-family: "PT Serif", serif;
   letter-spacing: 0.2rem;
   text-indent: 0.1rem;
   font-weight: 900;
   line-height: 1;
-  font-style: italic;
   font-size: 20px;
 }
 .card_row .card-text {
   color: #8D6E51;
-  font-weight: 500;
+  font-family: "PT Serif", serif;
   font-style: italic;
+  font-weight: 500;
   font-size: 17px;
   text-align: center;
 }

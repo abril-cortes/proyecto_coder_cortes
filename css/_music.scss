@@ -1,21 +1,19 @@
 .card_row {
    margin: 20px;
    padding: 0 30px;
-   font-family: 'PT Serif', serif;
+   @include text-styles;
    .album-title {
       color: $dark-brown;
-      font-family: 'PT Serif', serif;
       letter-spacing: 0.2rem;
       text-indent: 0.1rem;
       font-weight: 900;
       line-height: 1;
-      font-style: italic;
       font-size: 20px;
   }
   .card-text {
       color: $background-color;
+      @include text-styles;
       font-weight: 500;
-      font-style: italic;
       font-size: 17px;
       text-align: center;
    }
