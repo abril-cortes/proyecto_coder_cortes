@@ -2,3 +2,12 @@
     font-family: 'PT Serif', serif;
     font-style: italic;
 }
+@mixin subtitles-m-f {
+    color: $dark-brown;
+    font-weight: 900;
+    line-height: 1;
+}
+@mixin wh-standar {
+    width: 100%;
+    height: auto;
+}

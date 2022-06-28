@@ -3,12 +3,10 @@
    padding: 0 30px;
    @include text-styles;
    .album-title {
-      color: $dark-brown;
       letter-spacing: 0.2rem;
       text-indent: 0.1rem;
-      font-weight: 900;
-      line-height: 1;
       font-size: 20px;
+      @include subtitles-m-f;
   }
   .card-text {
       color: $background-color;

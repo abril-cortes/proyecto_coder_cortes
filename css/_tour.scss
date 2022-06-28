@@ -1,8 +1,5 @@
-
-
 .tour__section--container {
-    width: 100%;
-    height: auto;
+    @include wh-standar;
     text-align: center;
     .tour__img--container {
        display: flex;

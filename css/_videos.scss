@@ -1,9 +1,7 @@
 .main--videos-section {
-    width: 100%;
-    height: auto;
+    @include wh-standar;
     margin-top: 50px;
     text-align: center;
-    /*margin-top: 50px;*/
     .main--videos-container  {
         .title__performance {
             display: flex;
@@ -11,7 +9,7 @@
             padding: 30px 0;
             margin-top: 30px;
                 .video_title {
-                color: #e1d3bb;
+                color: $cream;
                 font-size: 3rem;
                 font-style: italic;
                 font-weight: 700;
@@ -21,7 +19,7 @@
        }
         .videos__section {
             a {
-                color: #e1d3bb;
+                color: $cream;
                 text-decoration: none;
                 transition: all 1s;
                 &:hover {
@@ -30,7 +28,7 @@
                 p {
                     margin-top: 10px;
                     &:visited {
-                        color: #e1d3bb;
+                        color: $cream;
                    }
                }
            }
@@ -46,8 +44,7 @@
        }
    }
    .fotos_container {
-        width: 100%;
-        height: auto;
+        @include wh-standar;
         margin-top: 50px;
    }
 }

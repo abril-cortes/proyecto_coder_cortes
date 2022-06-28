@@ -99,7 +99,6 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
-    /*margin: 70px;*/
   }
 
   .videos__section {
@@ -142,10 +141,6 @@
     background-position: top;
   }
 
-  /*.navbar_index {
-      background-image: none;
-      background-color: #8D6E51;
-  }*/
   .nav-item a {
     margin-left: 60px;
   }
@@ -260,12 +255,12 @@
   font-style: italic;
 }
 .card_row .album-title {
-  color: #674f3b;
   letter-spacing: 0.2rem;
   text-indent: 0.1rem;
+  font-size: 20px;
+  color: #674f3b;
   font-weight: 900;
   line-height: 1;
-  font-size: 20px;
 }
 .card_row .card-text {
   color: #8D6E51;
@@ -356,7 +351,6 @@
   height: auto;
   margin-top: 50px;
   text-align: center;
-  /*margin-top: 50px;*/
 }
 .main--videos-section .main--videos-container .title__performance {
   display: flex;
@@ -418,14 +412,14 @@
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 24px;
-  color: #8D6E51;
   letter-spacing: 1rem;
   text-indent: 0.8rem;
+  padding: 2px;
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  color: #674f3b;
   font-weight: 900;
   line-height: 1;
-  padding: 2px;
-  font-style: italic;
-  font-family: "PT Serif", serif;
 }
 .main--form-container .main--form .form_item {
   display: grid;
@@ -446,14 +440,14 @@
   border: 0;
   color: #e1d3bb;
   text-transform: uppercase;
-  font-style: italic;
-  font-family: "PT Serif", serif;
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 2px;
   width: 250px;
   margin-top: 15px;
   text-align: left;
+  font-family: "PT Serif", serif;
+  font-style: italic;
 }
 .main--form-container .main--form .form_item input {
   margin-top: 15px;
@@ -494,8 +488,8 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-style: italic;
   font-family: "PT Serif", serif;
+  font-style: italic;
   font-weight: 700;
   letter-spacing: 2px;
   width: 250px;
@@ -521,8 +515,8 @@
 .main--form-container .main--form .form_item--noticias .noticias {
   color: #e1d3bb;
   text-transform: uppercase;
-  font-style: italic;
   font-family: "PT Serif", serif;
+  font-style: italic;
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 2px;
@@ -530,14 +524,14 @@
   text-align: center;
 }
 .main--form-container .main--form .form_item--noticias .span_billie {
-  color: #af976d;
+  color: #8D6E51;
   font-weight: 700;
 }
 .main--form-container .main--form .comment p {
   color: #e1d3bb;
   text-transform: uppercase;
-  font-style: italic;
   font-family: "PT Serif", serif;
+  font-style: italic;
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 2px;
@@ -556,11 +550,10 @@
 }
 .main--form-container .main--form .comment label {
   color: #674f3b;
-  font-style: italic;
   font-family: "PT Serif", serif;
+  font-style: italic;
   text-transform: uppercase;
   font-size: 14px;
-  /*margin-left: 10px;*/
   transform: scale(1.1, 1.1);
 }
 .main--form-container .main--form .button {
@@ -646,8 +639,6 @@ html {
 
 #body {
   font-family: "PT Serif", serif;
-  height: 100vh;
-  width: 100%;
 }
 
 body {
@@ -660,7 +651,6 @@ body {
   grid-template-rows: auto auto 10%;
   grid-template-areas: "header" "main" "footer";
   overflow: scroll;
-  /*background-image: url('../assets/img/imgfondo.jpg');*/
 }
 
 .bodycolor {
