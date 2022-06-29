@@ -24,6 +24,7 @@
     .tour__date {
         @include wh-standar;
         font-family: 'PT Serif', serif;
+        display: block;
     }
     .date {
         display: flex;
