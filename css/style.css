@@ -393,6 +393,72 @@
   margin-top: 50px;
 }
 
+.main__store--container {
+  width: 100%;
+  height: auto;
+}
+.main__store--container .row .product_container {
+  display: flex;
+  display: block;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin: 20px 0;
+}
+.main__store--container .row .product_container .img_container {
+  width: 100%;
+  height: auto;
+}
+.main__store--container .row .product_container .img_container img {
+  width: 250px;
+}
+.main__store--container .row .product_container .text_container h2 {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  font-size: 26px;
+  text-align: left;
+  padding-left: 40px;
+  font-weight: 500;
+  color: #e1d3bb;
+}
+.main__store--container .row .product_container .text_container a {
+  text-decoration: none;
+}
+.main__store--container .row .product_container .text_container a p {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 40px;
+  color: rgb(192, 179, 152);
+  font-weight: 600;
+}
+.main__store--container .button_container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 10px 10px;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.main__store--container .button_container a {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: none;
+  color: #e1d3bb;
+  width: 150px;
+  height: 40px;
+  border: 2px solid rgb(192, 179, 152);
+  padding-top: 5px;
+  transition: all 1s;
+}
+.main__store--container .button_container a:hover {
+  background-color: rgb(192, 179, 152);
+  color: #fff;
+}
+
 .main--form-container {
   display: flex;
   justify-content: center;
@@ -693,16 +759,18 @@ header {
 }
 
 /*titulos generales*/
-.title-dicography-container, .tour__title--container, .title__videos--container, .title-biography-container, .form_title--container {
+.title-dicography-container, .tour__title--container, .title__videos--container, .title-biography-container, .form_title--container, .store-title-container {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
   margin-top: 90px;
 }
-.title-dicography-container .title, .tour__title--container .title, .title__videos--container .title, .title-biography-container .title, .form_title--container .title {
+.title-dicography-container .title, .tour__title--container .title, .title__videos--container .title, .title-biography-container .title, .form_title--container .title, .store-title-container .title {
   font-family: "PT Serif", serif;
   font-size: 24px;
-  width: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #8D6E51;
   background-color: #e1d3bb;
   letter-spacing: 1rem;
