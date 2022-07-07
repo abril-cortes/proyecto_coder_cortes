@@ -97,10 +97,11 @@
 
 @media (min-width: 992px) {
     #body {
-        background-image: url('../assets/img/3200x1800_edited.jpg');
+        background-image: url('../assets/img/3200x1800_edited\ .jpg');
         background-repeat: no-repeat;
         background-size:cover;
-        background-position: top; 
+        /*background-position: top; */
+        height: 100px;
     }
     .nav-item a {
         margin-left: 60px;
