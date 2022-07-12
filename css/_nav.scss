@@ -1,6 +1,7 @@
 .navbar {
     background-color: $nav-footer-color;
     height: 60px;
+    padding-right: 5px;
     .container-fluid {
         background-color: $nav-footer-color;
         ul {
@@ -9,7 +10,7 @@
                 font-family: 'PT Serif', serif;
                 font-size: 17px;
                 margin-top: 10px;
-                margin-right: 20px;
+                margin-right: 5px;
                 color: $cream;
                 transition: all 1s;
                 &:hover {

@@ -2,6 +2,7 @@
 .navbar {
   background-color: #7f644a;
   height: 60px;
+  padding-right: 5px;
 }
 .navbar .container-fluid {
   background-color: #7f644a;
@@ -13,7 +14,7 @@
   font-family: "PT Serif", serif;
   font-size: 17px;
   margin-top: 10px;
-  margin-right: 20px;
+  margin-right: 5px;
   color: #e1d3bb;
   transition: all 1s;
 }
