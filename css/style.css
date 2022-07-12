@@ -70,45 +70,37 @@
     background-color: #8D6E51;
     width: 100%;
   }
-
   .navbar-collapse ul {
     display: block;
     text-align: center;
   }
-
   .main__info--container {
     margin-top: 80px;
   }
-
   .biography_section--container {
     margin-top: 80px;
   }
-
   /*tour*/
   .tour__img {
     height: 60px;
     width: auto;
   }
-
   .tour__date {
     width: 100%;
     height: auto;
     font-family: "PT Serif", serif;
     display: block;
   }
-
   .date {
     display: flex;
     justify-content: center;
     align-content: center;
   }
-
   .date__container {
     background-color: rgba(211, 194, 154, 0.3);
     width: 70px;
     height: 70px;
   }
-
   .date__container span {
     display: flex;
     justify-content: center;
@@ -117,38 +109,32 @@
     text-align: center;
     text-transform: none;
   }
-
   .month {
     padding-top: 10px;
     font-size: 16px;
     line-height: 1;
   }
-
   .day {
     font-size: 25px;
     line-height: 1;
     margin-top: 5px;
   }
-
   /*videos*/
   .main--videos-container {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
   }
-
   .videos__section {
     margin: 0 20px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
-
   /*footer*/
   footer {
     display: block;
   }
-
   .footer__right {
     justify-content: center;
   }
@@ -158,7 +144,6 @@
     height: 90px;
     width: auto;
   }
-
   .tour__date {
     display: grid;
     grid-template-columns: 20% 60% 20%;
@@ -177,27 +162,22 @@
     /*background-position: top; */
     height: 100px;
   }
-
   .nav-item a {
     margin-left: 60px;
   }
-
   .navbar-collapse ul {
     background-color: transparent;
     display: flex;
   }
-
   .main__info--container {
     margin-top: 120px;
   }
-
   .biography_section--container {
     width: 100%;
     margin-top: 150px;
     padding: 30px;
     text-align: left;
   }
-
   .card-body {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -206,7 +186,6 @@
     align-items: center;
     align-content: center;
   }
-
   /*videos*/
   .videos__section {
     display: grid;
@@ -220,16 +199,13 @@
     margin-bottom: 40px;
     justify-content: center;
   }
-
   footer {
     display: flex;
     height: 60px;
   }
-
   .footer__right {
     justify-content: end;
   }
-
   .footer__right a {
     padding-right: 50px;
   }
@@ -762,7 +738,6 @@ body {
   grid-template-columns: auto;
   grid-template-rows: auto auto 10%;
   grid-template-areas: "header" "main" "footer";
-  overflow: scroll;
 }
 
 .bodycolor {
