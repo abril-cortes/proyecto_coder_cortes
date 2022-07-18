@@ -132,6 +132,10 @@
     height: -moz-fit-content;
     height: fit-content;
   }
+  .videos__section iframe {
+    width: 500px;
+    margin-top: 10px;
+  }
   /*footer*/
   footer {
     display: block;
@@ -159,9 +163,8 @@
   #body {
     background-image: url("../assets/img/3200x1800_edited .jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    /*background-position: top; */
-    height: 100px;
+    background-size: 1600px 750px;
+    background-position: top;
   }
   .nav-item a {
     margin-left: 60px;
@@ -171,13 +174,16 @@
     display: flex;
   }
   .main__info--container {
-    margin-top: 120px;
+    margin-top: 150px;
   }
   .biography_section--container {
     width: 100%;
-    margin-top: 150px;
+    margin-top: 100px;
     padding: 30px;
     text-align: left;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .card-body {
     display: grid;
@@ -193,8 +199,8 @@
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     row-gap: 40px;
-    -moz-column-gap: 60px;
-         column-gap: 60px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
     justify-items: center;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -213,7 +219,7 @@
 }
 /*Map*/
 .main__info--container {
-  padding: 30px;
+  padding: 40px;
   text-align: center;
 }
 .main__info--container .info__img--container img {
@@ -236,7 +242,7 @@
 }
 
 .biography_section--container .subtitle {
-  margin-top: 40px;
+  /* margin-top: 40px;*/
   background-color: #674f3b;
   margin-bottom: 20px;
   margin: 30px 20px;
@@ -264,7 +270,7 @@
 
 .card_row {
   margin: 20px;
-  padding: 0 30px;
+  padding: 0 20px;
   font-family: "PT Serif", serif;
   font-style: italic;
 }
